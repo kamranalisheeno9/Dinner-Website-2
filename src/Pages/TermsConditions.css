@@ -1,0 +1,40 @@
+.main-container{
+    background-image: url('../assets/cloudsbg.svg');
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 200px;
+}
+.terms-container{
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.terms-main-text{
+    font-size: 18px;
+    font-weight: bold;
+    color: #111827;
+    margin: 20px 0px;
+}
+.terms-content-text{
+    font-size: 18px;
+    color: #111827;
+}
+.terms-para-text{
+    list-style: none;
+  }
+  
+.terms-para-text li::before {
+    content: "\2022";  
+    color: #d1d5db; 
+    font-weight: bold; 
+    display: inline-block;  
+    width: 1em;
+    margin-left: -1em; 
+  }
+.terms-para-text li{
+    font-size: 18px;
+    margin-top: 9px;
+    color: #374151;
+
+}

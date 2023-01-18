@@ -1,0 +1,32 @@
+.pricing-card-container{
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.pricing-days{
+    padding: 16px 8px;
+    color: #257EAA;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+.pricing-details{
+    padding: 16px 8px;
+    text-align: center;
+    border-bottom: 1px solid #257EAA;
+    margin: 0px 2px;
+
+}
+.pricing-details:last-child{
+    border-bottom: 0px solid #257EAA;
+
+}
+.pricing-details-inner-text{
+    color: #257EAA;
+    font-weight: bold;
+
+    
+}

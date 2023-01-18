@@ -1,0 +1,57 @@
+.events-main-container{
+    background-image: url('../assets/cloudsbg.svg');
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 200px;
+}
+.event-img img{
+    width: 100%;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.event-text{
+    color: #5B5563;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+.event-container-2{
+    padding: 64px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 100px;
+
+}
+.event-2-text{
+    color: #257EAA;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.event-2-btn a{
+    text-decoration: none;
+}
+.event-2-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.events-data-content{
+    margin-top: 20px;
+    
+}
+.events-data-content:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width:776px){
+    .event-container-2 {
+        padding: 14px !important;
+    }
+    .event-2-text{
+        font-size: 30px;
+    }
+    
+}

@@ -1,0 +1,69 @@
+.blog-main-container{
+    background-image: url('../assets/cloudsbg.svg');
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 200px;
+}
+.blog-container{
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 40px;
+
+}
+.blog-row{
+    margin: 100px 0px;
+}
+.blog-img img{
+    width: 100%;
+    padding: 10px;
+    transition: 0.2s all linear;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.blog-img img:hover{
+    opacity: 0.9;
+
+}
+.blog-title{
+    color: #257EAA;
+    font-size: 20px;
+    font-weight: bold;
+}
+.small-screen-title{
+    color: #257EAA;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+.blog-content{
+    color: #4B5563;
+    font-size: 18px;
+    text-align: justify;
+}
+
+@media only screen and  (max-width:776px){
+    .blog-title{
+        display: none;
+    }
+    .small-screen-title{
+        display: inline-block;
+    }
+
+}
+@media only screen and  (max-width:496px){
+    .blog-container{
+        padding: 15px;
+    }
+    .blog-img img{
+        padding: 0px;
+        border-radius: 0px;
+        margin-bottom: 5px;
+
+    }    
+    }
+    

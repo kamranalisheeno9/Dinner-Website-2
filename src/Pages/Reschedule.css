@@ -1,0 +1,17 @@
+.reschedule-main-container{
+    background-image: url('../assets/cloudsbg.svg');
+    background-size: cover;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 200px;
+}
+.reschedule-container{
+    margin-top: 100px;
+    margin-bottom: 300px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+}

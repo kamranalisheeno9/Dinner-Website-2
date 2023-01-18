@@ -1,0 +1,47 @@
+.gallery-main-container{
+  background-image: url('../assets/cloudsbg.svg');
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: repeat-x;
+  padding-bottom: 200px;
+  padding-top: 150px;
+}
+.carousel-container {
+  padding: 0px;
+  width: 60%;
+
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+  box-sizing: border-box;
+}
+
+.carousel-item-container {
+  border-radius: 10px;
+  height: 650px;
+}
+.carousel-container img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 100%;
+    
+
+}
+
+.videos-container{
+    margin-top: 60px;
+}
+
+
+@media only screen and (max-width:1080px){
+.carousel-container {
+    width: 90%;
+    margin: 20px ; 
+}
+.carousel-item-container {
+    height: auto;
+  }
+    
+}

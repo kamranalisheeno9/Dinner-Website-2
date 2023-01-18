@@ -1,0 +1,83 @@
+.contact-main-container{
+    background-image: url('../assets/cloudsbg.svg');
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 200px;
+}
+.contact-container{
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    width: 70%;
+    background-color: white;
+    margin-top: 50px;
+}
+
+
+.contact-detail{
+    
+    background-color: #F9FAFB;
+    padding: 96px 32px;
+}
+
+
+   
+.contact-main-text{
+color: #0891B2;
+font-size: 30px;
+font-weight: bold;
+}
+.contact-para-text{
+    color: #4B5563;
+    font-size: 18px;
+    margin-top: 12px;
+
+}
+
+.contact-sub-text{
+    color: #4B5563;
+    font-size: 16px;
+    margin: 24px 0px;
+}
+.contact-list-detail ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #257EAA;
+    cursor: pointer;
+    padding: 0px !important;
+
+}
+.contact-icons{
+    color: #257EAA;
+    font-size: 30px;
+}
+.mention-icon{
+    font-size: 22px !important;
+}
+.contact-icons span{
+    margin-left: 15px;
+}
+.map-container-iframe{
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    padding: 0px !important;
+}
+
+
+.contact-form{
+    padding: 96px 12px;
+
+}
+
+
+@media only screen and (max-width:492px){
+    .contact-container{
+        width: 100%;
+    }
+    .main-contact-container{
+        padding: 0px !important;
+    }
+    
+}

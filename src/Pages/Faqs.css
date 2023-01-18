@@ -1,0 +1,52 @@
+.faqs-main-container{
+    background-image: url('../assets/cloudsbg.svg');
+    background-size: cover;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 200px;
+}
+.faqs-container{
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.faqs-container .accordion-item {
+    border: none !important;
+
+}
+.faqs-container .accordion-button:not(.collapsed) {
+    background-color: none !important;
+    box-shadow: none !important;
+}
+.faqs-container .accordion-button {
+    background-color: transparent !important;
+    border-bottom: 2px solid #e5e7eb;
+    box-shadow: none !important;
+}
+.faqs-container .accordion-button {
+    box-shadow: none !important;
+    background-color: none !important;
+
+}
+.accordion-container .accordion-button{
+    font-size: 18px !important;
+    color: #111827 !important;
+
+}
+.accordion-container .accordion-button::after {
+
+    background-color: #A8CBDD !important;
+    border-radius: 50% !important; 
+}
+   
+
+.accordion-container .accordion-body{
+    font-size: 16px;
+    color: #4B5563;
+
+}

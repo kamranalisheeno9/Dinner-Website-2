@@ -1,0 +1,25 @@
+.ratings-container{
+    padding: 50px 0px;
+}
+.ratings{
+    text-align: center;
+}
+.ratings img{
+    width: 80px;
+}
+.image-ratings{
+    margin-bottom: 5px;
+}
+.rating-icons-star{
+    font-size: 20px;
+    color: #EAB308;
+}
+.rating-icons-circle{
+    font-size: 16px;
+    color: #10B981;
+}
+.rating-points span{
+color: #257EAA;
+font-size: 18px;
+font-weight: bold;
+}

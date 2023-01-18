@@ -1,0 +1,23 @@
+.sitemap-main-container{
+    background-image: url('../assets/cloudsbg.svg');
+    background-size: cover;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 200px;
+}
+.sitemap-container{
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.sitemap-list ul li{
+    list-style: none;
+}
+.sitemap-list ul li a{
+    text-decoration: none !important;
+    color: #257EAA;
+}

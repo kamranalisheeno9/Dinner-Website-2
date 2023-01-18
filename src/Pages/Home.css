@@ -1,0 +1,207 @@
+.home_page {
+  background-color: #ffffff;
+}
+.home_page_main_text {
+  background-color: #f3f4f6;
+  padding: 200px;
+}
+.text_container {
+  margin: 0px 90px;
+}
+.main_text_1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: bold;
+}
+.main_text_2 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: bold;
+  color: rgb(37 126 170) !important;
+}
+.para_text {
+  color: #4b5563;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-top: 20px;
+  word-wrap:break-word !important;
+
+}
+.home_page_main_image {
+padding: 0px !important;
+}
+.home_page_main_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.book_seat_main_btn {
+  width: 250px;
+  margin-top: 20px;
+}
+
+.text_container_2 {
+  padding: 96px 32px;
+  background-color: #ffffff;
+  text-align: center;
+  width: 650px !important;
+}
+.small_text {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #257eaa;
+  font-weight: bold;
+}
+.main_text_3 {
+  line-height: 60px;
+  font-size: 60px;
+  font-weight: bold;
+}
+.para_text_2 {
+  margin-top: 20px;
+  color: #4b5563;
+  font-size: 20px;
+  line-height: 28px;
+
+}
+.book_container {
+  background-color: black;
+  margin-bottom: 20px;
+}
+.dinner_img {
+  padding: 0px !important;
+  margin: 0px !important;
+  height: 380px;
+}
+.dinner_img img{
+  object-fit: cover;  
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+.dinner_img img {
+  width: 100%;
+  height: 100%;
+}
+.dinner_banner_text {
+  padding: 64px 32px !important;
+  width: 40% !important;
+}
+
+.question_text_dinner {
+  color: #d1d5db;
+  font-size: 16px;
+  font-weight: bold;
+}
+.main_text_dinner {
+  color: #257eaa;
+  font-size: 36px;
+  font-weight: bold;
+}
+.para_dinner {
+  color: #d1d5db;
+  font-size: 18px;
+  margin: 10px 0px;
+  word-wrap:break-word !important;
+}
+.btn_dinner {
+  width: 300px;
+  margin-top: 30px;
+}
+
+.rating_updated{
+    color: #9CA3AF;
+    font-size: 12px;
+    text-align: right;
+    padding-bottom:10px ;
+}
+.reviews_container{
+    background-image: url('../assets/cloudsbg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+}
+@media only screen and (max-width: 1050px) {
+  .dinner_banner_text {
+    padding: 20px 32px !important;
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+    .home_page_main_image {
+      height: 384px;
+    }
+    .home_page_main_text {
+      background-color: #f3f4f6;
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+    .text_container {
+      text-align: center;
+    }
+    .book_seat_main_btn {
+      margin: 20px auto;
+    }
+  .home_page_main_text {
+    padding: 50px;
+  }
+  .text_container {
+    margin: 0px 30px;
+  }
+  .main_text_1 {
+    font-size: 48px;
+  }
+
+  .text_container_2 {
+    width: auto !important;
+  }
+  .small_text {
+    font-size: 16px;
+  }
+  .main_text_3 {
+    line-height: 46px;
+    font-size: 36px;
+  }
+  .para_text_2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .dinner_banner_text {
+    padding: 64px 32px !important;
+    width: 100% !important;
+  }
+  .dinner_img {
+    background-size: cover;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .text_container {
+    margin: 0px 16px;
+  }
+  .main_text_1 {
+    font-size: 36px;
+  }
+  .main_text_2 {
+    font-size: 36px;
+  }
+  .para_text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .book_seat_main_btn {
+    width: 100%;
+  }
+  .reviews_container{
+    background-image: url('../assets/cloudsbg.svg');
+    background-size: 320%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+}
+}

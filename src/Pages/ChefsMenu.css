@@ -1,0 +1,115 @@
+.menu-main-container{
+    background-image: url('../assets/cloudsbg.svg');
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 200px;
+}
+.menu-content{
+    padding: 100px 0px;
+}
+
+.category-name{
+    color: #0891B2;
+    margin-top: 8px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.options-text{
+    color: #4B5563;
+    margin-top: 16px;
+    font-size: 18px;
+
+
+}
+
+.item-name{
+color: #257EAA;
+margin-top: 8px;
+font-size: 20px;
+}
+.item-detail{
+    color: #4B5563;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.item-img{
+    min-height: 300px;
+}
+.item-img img{
+    min-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    border-radius: 50%;
+}
+.menu-booking-container{
+    background-color: black;
+    padding: 48px 48px 64px;
+    border-radius:10px;
+
+}
+.passport-image img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    margin-top: 18px;
+}
+.passport-menu-title-1{
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    margin-top: 8px;
+
+    
+}
+.passport-menu-title-2{
+font-size: 36px;
+
+font-weight: bold;
+color: #257EAA;
+}
+.passport-menu-details{
+
+    margin-top: 8px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #C7D2Fe;
+}
+
+@media only screen and (max-width:992px){
+    .passport-image{
+        text-align: center;
+    }
+    .passport-image img{
+        width: 64%;
+    }
+}
+@media only screen and (max-width:772px){
+    .passport-image img{
+        width:100%;
+    }
+}
+@media only screen and (max-width:482px){
+    .menu-booking-container {
+        background-color: black;
+        padding: 11px 20px 40px;
+        border-radius: 10px;
+        width: 92%;
+    }
+    .menu-content {
+        padding: 10px 0px;
+    }
+
+    .passport-menu-title-1{
+        font-size: 30px;
+    
+        
+    }
+    .passport-menu-title-2{
+    font-size: 30px;
+    
+    }
+   
+    
+}

@@ -1,0 +1,29 @@
+.review-container{
+    padding: 32px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.review{
+    font-size: 18px;
+    color: #4B5563;
+    line-height:30px;
+  word-wrap:break-word !important;
+
+}
+.review-name{
+    color: #257EAA;
+    font-size: 16px;
+    margin-top: 20px;
+    
+}
+.review-platform{
+font-size: 16px;
+color: #4B5563;
+margin-bottom: 15px;
+
+}
