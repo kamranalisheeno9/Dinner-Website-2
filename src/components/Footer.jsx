@@ -13,10 +13,12 @@ import { GlobalData } from "../Context/GlobalData";
 const Footer = () => {
   const [FooterData, setFooterData] = useState([]);
   const { lang, Url } = useContext(GlobalData);
+  const [contactData,setContactData]=useState([])
   
 
   useEffect(() => {
     getFooterData();
+    getContactData();
   }, [lang]);
 
   const getFooterData = () => {
@@ -28,6 +30,18 @@ const Footer = () => {
       })
       .then((response) => {
         setFooterData(response.data.data);
+      })
+      .catch((error) => console.log(error));
+  };
+  const getContactData = () => {
+    axios
+      .get(`${Url}api/contact_us?=`, {
+        headers: {
+          locale: lang,
+        },
+      })
+      .then((response) => {
+        setContactData(response.data.data);
       })
       .catch((error) => console.log(error));
   };
@@ -63,13 +77,13 @@ const Footer = () => {
               <span className="contact_icon">
                 <FiSmartphone />
               </span>
-              +971 58 819 3296
+              {contactData.phone}
             </div>
             <div className="inner_text links">
               <span className="contact_icon">
                 <IoSearchCircleOutline />
               </span>
-              info@dinnerinthesky.ae
+              {contactData.email}
             </div>
             <div>
               <img

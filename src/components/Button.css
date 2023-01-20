@@ -11,6 +11,7 @@
   text-align: center;
   user-select: none !important;
   border: 0px;
+  width: 100%;
 }
 .button:hover {
   background: linear-gradient(40deg, #06b6d4 0%, #257eaa 100%);
