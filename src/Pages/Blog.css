@@ -45,6 +45,9 @@
     font-size: 18px;
     text-align: justify;
 }
+.pagination-container .pagination{
+    justify-content: center;
+}
 
 @media only screen and  (max-width:776px){
     .blog-title{

@@ -55,7 +55,9 @@ font-weight: bold;
 .mention-icon{
     font-size: 22px !important;
 }
-.contact-icons span{
+.contact-icons a{
+    color: #257EAA;
+    text-decoration: none;
     margin-left: 15px;
 }
 .map-container-iframe{

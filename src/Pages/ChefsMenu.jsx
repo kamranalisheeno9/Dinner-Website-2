@@ -61,10 +61,10 @@ const ChefsMenu = () => {
                   <div className="options-text">{menu.description}</div>
                 </Col>
                 <Col lg="8">
-                  <Row className="justify-content-around mt-4 ">
+                  <Row className="justify-content-between mt-4 ">
                     {menu.menu_items.map((item) => {
                       return (
-                        <Col id={item.id} sm="5">
+                        <Col className="" id={item.id} sm="5">
                           <div className="item-img mt-4">
                             {" "}
                             <img src={item.image} alt={item.title} />{" "}

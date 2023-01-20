@@ -200,7 +200,7 @@
   .btn_responsive {
     padding-top: 20px;
     border-top: 1px solid rgba(230, 230, 230, 0.517);
-    text-align: center;
+    text-align: start;
   }
   .languages_li_responsive{
     cursor: pointer;

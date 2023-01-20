@@ -9,6 +9,7 @@ import "./Contact.css";
 import HeadNavbar from "../components/HeadNavbar";
 import axios from "axios";
 import { GlobalData } from "../Context/GlobalData";
+import { BsYoutube } from "react-icons/bs";
 
 const Contact = () => {
   const [ContactData, setContactData] = useState([]);
@@ -20,7 +21,6 @@ const Contact = () => {
   const [Mobile, setMobile] = useState("");
   const [Message, setMessage] = useState("");
   const [contactFormData,setContactFormData]=useState([])
-  const [bannerImg,setBannerImg]=useState("https://dinner-web.netlify.app/assets/menubg-ed7938af.png")
 
   useEffect(() => {
     getContactData();
@@ -52,19 +52,35 @@ const Contact = () => {
       .catch((error) => console.log(error));
   };
 
-  const handleSubmit =()=>{
+  const handleSubmit =(e)=>{
+    e.preventDefault();
     const Data={
       name:Name,
       email:Email,
       mobile:Mobile,
       message:Message
     }
-    setContactFormData([...contactFormData,Data])
+    if(Name != "" || Email != "" || Mobile !="" || Message !=""){
+      setContactFormData([...contactFormData,Data])
+
+      axios.post(`${Url}api/contact_us_form`, {
+        name:Data.name,
+        email:Data.email,
+        mobile:Data.mobile,
+        message:Data.message,
+      }
+      
+      ).then(res=>{
+        console.log(response.data)
+      })
+
+      setName("")
+      setEmail("")
+      setMobile("")
+      setMessage("")
+
+    }
     console.log(contactFormData)
-    setName("")
-    setEmail("")
-    setMobile("")
-    setMessage("")
   }
 
   return (
@@ -105,10 +121,16 @@ const Contact = () => {
                 </ul>
               </div>
               <div className="contact-icons">
+                <a href="" target="_blank">
+
                 <BsFacebook />{" "}
-                <span>
+                </a>
+                <a href="" target="_blank">
                   <BsInstagram />
-                </span>
+                </a>
+                <a href="" target="_blank">
+                  <BsYoutube />
+                </a>
               </div>
             </Col>
               )
@@ -116,9 +138,7 @@ const Contact = () => {
             
             <Col lg="7" className="contact-form">
               <Form
-              // noValidate
-              // validated={validated}
-              onSubmit={handleSubmit}
+              onSubmit={(e)=>handleSubmit(e)}
               >
                 <Row>
                   <Form.Group
@@ -179,7 +199,8 @@ const Contact = () => {
 
                   </Form.Group>
                   <Col lg="11 mt-4">
-                  <Button Func={handleSubmit} btnName="Contact Us" font="16px" />
+
+                  <Button type="submit" Func={handleSubmit} btnName="Contact Us" font="16px" />
 
                   </Col>
                 </Row>
@@ -192,7 +213,7 @@ const Contact = () => {
         <Container id={data.id} className="map-container mt-5">
 
           <iframe
-            src={data.iframe_location}
+            src={`https://www.google.com/maps/embed?pb=${data.iframe_location}`}
             width="100%"
             height="450"
             className="map-container-iframe"

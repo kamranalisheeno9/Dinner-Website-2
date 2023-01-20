@@ -6,7 +6,8 @@ import Button from "./Button";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { GlobalData } from "../Context/GlobalData";
-
+import Logo from "../assets/logo.png";
+import i18n from '../i18n'
 const Header = (props) => {
   const { lang, setLang } = useContext(GlobalData);
 
@@ -30,6 +31,7 @@ const Header = (props) => {
     setDisplayLanguage(!displayLanguage);
     setDisplayAbout(false);
   };
+  
   return (
     <>
       {/*  Desktop Version */}
@@ -40,30 +42,28 @@ const Header = (props) => {
         }
       >
         {/* Header Logo Image  */}
+          
         <div>
+
           <Link to="/">
-            <img
-              className="logo_img"
-              src="https://dinnerinthesky.ae/images/dits-logo.png"
-              alt="logo img"
-            />
+            <img className="logo_img" src={Logo} alt="logo img" />
           </Link>
         </div>
         {/* Navbar */}
         <nav className="navbar">
           <li>
-            <Link to="/pricing">{lang === "en" ? "Pricing" : "التسعير"}</Link>
+            <Link to="/pricing">{i18n.t('pricing')}</Link>
           </li>
           <li>
             <Link to="/our-menu">
-              {lang === "en" ? "Chefs Menu" : "قائمة الطهاة"}
+             {i18n.t('chefs_menu')}
             </Link>
           </li>
           <li>
-            <Link to="/gallery">{lang === "en" ? "Gallery" : "صالة عرض"}</Link>
+            <Link to="/gallery">{i18n.t('gallery')}</Link>
           </li>
           <li onClick={() => showAboutDropDown()} className="about_li">
-            {lang === "en" ? "About Us" : "معلومات عنا"}{" "}
+            {i18n.t('about_us')}{" "}
             <span className="arrow">
               {" "}
               <MdOutlineKeyboardArrowDown />{" "}
@@ -71,35 +71,33 @@ const Header = (props) => {
           </li>
           <li>
             <Link to="/contact">
-              {lang === "en" ? "Contact Us" : "اتصل بنا"}
+              {i18n.t('contact_us')}
             </Link>
           </li>
           <li>
             <Link to="/reschedule">
-              {lang === "en" ? "Reschedule" : "إعادة الجدولة"}
+              {i18n.t('reschedule')}
             </Link>
           </li>
           <li>
-            <Link to="/blog">{lang === "en" ? "Blogs" : "المدونات"}</Link>
+            <Link to="/blog">{i18n.t('blogs')}</Link>
           </li>
           <div className={displayAbout ? "about_dropdown" : "hide"}>
             <ul>
               <Link to="/about-us">
-                {lang === "en" ? "About Us" : "معلومات عنا"}
+                {i18n.t('about_us')}
               </Link>
               <Link to="/terms-conditions">
-                {lang === "en" ? "Terms & Conditions" : "البنود و الظروف"}
+                {i18n.t('terms_conditions')}
               </Link>
               <Link to="/faqs">
-                {lang === "en" ? "Frequently Asked Questions" : "أسئلة مكررة"}
+              {i18n.t('faqs')}
               </Link>
               <Link to="/safety-security">
-                {lang === "en" ? "Safety & Security" : "سلامة الامن"}
+                {i18n.t('safety_security')}
               </Link>
               <Link to="/events">
-                {lang === "en"
-                  ? "Corporate & Private Events"
-                  : "أحداث الشركات والخاصة"}
+              {i18n.t('cooperative_privete_events')}
               </Link>
             </ul>
           </div>
@@ -109,7 +107,7 @@ const Header = (props) => {
         <div className="button_container">
           <Button btnName="Book Now" font="16px" />
           <li onClick={() => showLanguageDropDown()} className="languages_li">
-          {lang==="en"? "Language": "لغة"}{" "}
+            {i18n.t('language')}{" "}
             <span className="arrow">
               {" "}
               <MdOutlineKeyboardArrowDown />{" "}
@@ -121,13 +119,13 @@ const Header = (props) => {
                 className="lang-drop-content"
                 onClick={() => ChangeLang("en")}
               >
-                English
+                {i18n.t('english')}
               </div>
               <div
                 className="lang-drop-content"
                 onClick={() => ChangeLang("ar")}
               >
-                {lang === "en" ? "Arabic" : "عربى"}
+                {i18n.t('arabic')}
               </div>
             </div>
           </div>
@@ -138,11 +136,7 @@ const Header = (props) => {
 
       <div className="responsive_header_container">
         <div>
-          <img
-            className="logo_img"
-            src="https://dinnerinthesky.ae/images/dits-logo.png"
-            alt="logo img"
-          />
+          <img className="logo_img" src={Logo} alt="logo img" />
         </div>
         <div
           onClick={() => setDisplayResponsiveNavbar(true)}
@@ -156,11 +150,7 @@ const Header = (props) => {
           }
         >
           <div className="logo_container">
-            <img
-              className="logo_img"
-              src="https://dinnerinthesky.ae/images/dits-logo.png"
-              alt="logo img"
-            />
+            <img className="logo_img" src={Logo} alt="logo img" />
             <div
               onClick={() => setDisplayResponsiveNavbar(false)}
               className="menu_icon"
@@ -170,23 +160,23 @@ const Header = (props) => {
           </div>
           <ul>
             <li>
-              <Link to="/pricing">{lang === "en" ? "Pricing" : "التسعير"}</Link>
+              <Link to="/pricing">{i18n.t('pricing')}</Link>
             </li>
             <li>
               <Link to="/our-menu">
-                {lang === "en" ? "Chefs Menu" : "قائمة الطهاة"}
+               {i18n.t('chefs_menu')}
               </Link>
             </li>
             <li>
               <Link to="/gallery">
-                {lang === "en" ? "Gallery" : "صالة عرض"}{" "}
+                {i18n.t('gallery')}{" "}
               </Link>
             </li>
             <li
               onClick={() => setResponsiveDropdown(!responsiveDropdown)}
               className="about_li"
             >
-              {lang === "en" ? "About Us" : "معلومات عنا"}{" "}
+              {i18n.t('about_us')}{" "}
               <span className="arrow">
                 {" "}
                 <MdOutlineKeyboardArrowDown />{" "}
@@ -203,32 +193,28 @@ const Header = (props) => {
                 <li>
                   <Link to="/about-us">
                     {" "}
-                    {lang === "en" ? "About Us" : "معلومات عنا"}
+                    {i18n.t('about_us')}
                   </Link>
                 </li>
                 <li>
                   <Link to="/terms-conditions">
-                    {lang === "en" ? "Terms & Conditions" : "البنود و الظروف"}
+                    {i18n.t('terms_conditions')}
                   </Link>
                 </li>
                 <li>
                   <Link to="/faqs">
-                    {lang === "en"
-                      ? "Frequently Asked Questions"
-                      : "أسئلة مكررة"}
+                  {i18n.t('faqs')}
                   </Link>
                 </li>
                 <li>
                   <Link to="/safety-security">
-                    {lang === "en" ? "Safety & Security" : "سلامة الامن"}
+                    {i18n.t('safety_security')}
                   </Link>
                 </li>
                 <li>
                   <Link to="/events">
                     {" "}
-                    {lang === "en"
-                      ? "Corporate & Private Events"
-                      : "أحداث الشركات والخاصة"}
+                    {i18n.t('cooperative_privete_events')}
                   </Link>
                 </li>
               </ul>
@@ -236,17 +222,17 @@ const Header = (props) => {
             <li>
               <Link to="/contact">
                 {" "}
-                {lang === "en" ? "Contact Us" : "اتصل بنا"}
+                {i18n.t('contact_us')}
               </Link>
             </li>
             <li>
               <Link to="/reschedule">
                 {" "}
-                {lang === "en" ? "Reschedule" : "إعادة الجدولة"}
+                {i18n.t('reschedule')}
               </Link>
             </li>
             <li>
-              <Link to="/blog"> {lang === "en" ? "Blogs" : "المدونات"}</Link>
+              <Link to="/blog"> {i18n.t('arabic')}</Link>
             </li>
           </ul>
           <div className="button_responsive_container">
@@ -257,7 +243,7 @@ const Header = (props) => {
               onClick={() => showLanguageDropDown()}
               className="languages_li_responsive"
             >
-              {lang==="en"? "Language": "لغة"}{" "}
+              {i18n.t('language')}{" "}
               <span className="arrow">
                 {" "}
                 <MdOutlineKeyboardArrowDown />{" "}
@@ -273,13 +259,13 @@ const Header = (props) => {
                   className="lang-drop-content-resp"
                   onClick={() => ChangeLang("en")}
                 >
-                  English
+                  {i18n.t('english')}
                 </div>
                 <div
                   className="lang-drop-content-resp"
                   onClick={() => ChangeLang("ar")}
                 >
-                   {lang === "en" ? "Arabic" : "عربى"}
+                  {i18n.t('arabic')}
                 </div>
               </div>
             </div>

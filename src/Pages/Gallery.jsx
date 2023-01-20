@@ -31,7 +31,7 @@ const Gallery = () => {
   };
   const getYoutubeData = () => {
     axios
-      .get(`${Url}api/gallary`, {
+      .get(`${Url}api/gallary_videos`, {
         headers: {
           locale: lang,
         },

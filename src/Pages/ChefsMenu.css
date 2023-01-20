@@ -33,13 +33,9 @@ font-size: 20px;
     font-size: 16px;
     margin-top: 8px;
 }
-.item-img{
-    min-height: 300px;
-}
+
 .item-img img{
-    min-height: 300px;
-    object-fit: cover;
-    object-position: center;
+    height: 350px;
     width: 100%;
     border-radius: 50%;
 }
@@ -89,6 +85,15 @@ color: #257EAA;
     .passport-image img{
         width:100%;
     }
+    .item-img img{
+        height: 280px;
+    }
+}
+@media only screen and (max-width:579px){
+    .item-img img{
+        height: auto;
+    }
+
 }
 @media only screen and (max-width:482px){
     .menu-booking-container {

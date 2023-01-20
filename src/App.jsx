@@ -16,10 +16,15 @@ import Reschedule from './Pages/Reschedule';
 import Sitemap from './Pages/Sitemap';
 import Blog from './Pages/Blog';
 import {GlobalData} from './Context/GlobalData'
-
+import base_url from './config'
+import './i18n';
+import i18next from 'i18next';
 const App=()=> {
-const Url=import.meta.env.VITE_REACT_APP_URL;
+const Url=base_url;
 const [lang,setLang]=useState("en")
+
+i18next.changeLanguage(lang)
+
   return (
     <GlobalData.Provider value={{lang,setLang,Url}}>
     
